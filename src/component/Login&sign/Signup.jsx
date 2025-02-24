@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
 import { auth } from "../../Firebase";
 import { FcGoogle } from "react-icons/fc";
-import { FaFacebook } from "react-icons/fa";
+import "./Login.css";
+
 
 const Signup = () => {
   const [firstName, setFirstName] = useState("");
