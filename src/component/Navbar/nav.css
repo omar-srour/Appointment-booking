@@ -1,0 +1,96 @@
+/* إصلاح الخلفية */
+.AppBar {
+background: none !important;
+  position: static !important;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: none !important;
+ 
+}
+
+
+.Typography  {
+ flex-grow:2 ;
+}
+
+/* ضبط حجم اللوغو */
+.Typography img {
+  width: 90px;
+  margin-top: 10px;
+}
+
+/* أزرار التسجيل */
+.custom-btn {
+  font-size: 16px !important;
+  color: white !important;
+  background-color:  rgb(37, 129, 190)!important;
+  padding: 6px 20px !important;
+  margin-right: 10px !important;
+  border-radius: 20px !important;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: rgb(214, 217, 218) !important;
+}
+
+.about{
+margin-right:330px !important;
+
+
+}
+
+/* أزرار التنقل */
+.custom-btnn {
+  background-color:  rgb(37, 129, 190)!important;
+  color: white !important;
+  padding: 6px 20px !important;
+  margin-left: 10px !important;
+  border-radius: 20px !important;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px !important;
+ 
+  
+}
+
+.custom-btnn:hover {
+  background-color: rgb(214, 217, 218) !important;
+}
+
+/* ضبط تموضع عناصر التنقل */
+.about {
+  margin-right: 420px;
+  text-align: center;
+}
+
+/* تأكد أن الصفحة لا تغطي الـ Navbar */
+body {
+  padding-top: 80px;
+}
+
+
+/* إخفاء زر القائمة في الشاشات الكبيرة */
+.menu-button {
+  display: none !important;
+  border: none !important;
+  background: none !important;
+  margin-right: -60px !important;
+}
+
+/* إظهار زر القائمة فقط عند تصغير الشاشة */
+@media (max-width: 768px) {
+  .menu-button {
+    display: block !important;
+  }
+
+  /* إخفاء أزرار التنقل في الشاشات الصغيرة */
+  .about, .custom-btn {
+    display: none !important;
+    
+  }
+}
