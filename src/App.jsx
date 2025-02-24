@@ -6,17 +6,15 @@ import Home from "./component/HOME/Home";
 import About from "./component/About/About";
 import Booking from "./component/Booking/Booking";
 
-
 function App() {
   return (
     <Router>
-      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/About" element={<Home />} />
+        <Route path="/about" element={<About />} /> 
         <Route path="/signup" element={<Signup />} />
-        <Route path="/Booking" element={<Booking/>} />
+        <Route path="/booking" element={<Booking />} />  
       </Routes>
     </Router>
   );
