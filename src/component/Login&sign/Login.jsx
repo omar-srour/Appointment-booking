@@ -4,7 +4,7 @@ import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 
 import { auth } from "../../Firebase";
 import { useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
-import './Login.css';
+import './login.css';
 
 const Login = () => {
   const [email, setEmail] = useState("");

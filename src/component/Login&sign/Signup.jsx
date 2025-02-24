@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
 import { auth } from "../../Firebase";
 import { FcGoogle } from "react-icons/fc";
-import "./Login.css";
+import './login.css';
 
 
 const Signup = () => {
